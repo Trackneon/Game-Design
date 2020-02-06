@@ -18,8 +18,8 @@ public class CharacterMover : MonoBehaviour
 
     void Update()
     {
-        position.x = -moveSpeed * Input.GetAxis("Vertical");
-        position.z = moveSpeed * Input.GetAxis("Horizontal");
+        position.x = -moveSpeed * Input.GetAxis("Horizontal");
+        position.z = -moveSpeed * Input.GetAxis("Vertical");
         controller.Move(position * Time.deltaTime);
     }
 }

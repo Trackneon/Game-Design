@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class CharacterMover : MonoBehaviour
 {
-    public float moveSpeed = 20f; 
+    public float moveSpeed = 100f; 
     private Vector3 position;
     private CharacterController controller;
     
@@ -18,8 +18,8 @@ public class CharacterMover : MonoBehaviour
 
     void Update()
     {
-        position.x = -moveSpeed * Input.GetAxis("Horizontal");
-        position.z = -moveSpeed * Input.GetAxis("Vertical");
+        position.x = moveSpeed * Input.GetAxis("Horizontal");
+        position.z = moveSpeed * Input.GetAxis("Vertical");
         controller.Move(position * Time.deltaTime);
     }
 }

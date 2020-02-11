@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b660918a3d153c64b9e139b2b2e41f0b, type: 3}
+  m_Name: Green  Lazer
+  m_EditorClassIdentifier: 
+  damageAction: {fileID: 11400000, guid: f702795a9efe07748999e325279afa60, type: 2}
+  weaponColor: {r: 0.049241543, g: 1, b: 0, a: 1}
+  weaponArt: {fileID: 1265850613410047310, guid: a4f4435c6383b654391ce20fe0a0c63f,
+    type: 3}
+  ammoObj: {fileID: 719641713431110899, guid: 9ec438b8d52d7f2468dd256129e992bd, type: 3}
+  firePower: -0.1
+  playerHealth: {fileID: 11400000, guid: 5ed437216385d7d4eac785de214b69e3, type: 2}

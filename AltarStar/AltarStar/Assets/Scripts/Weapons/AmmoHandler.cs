@@ -17,7 +17,7 @@ public class AmmoHandler : MonoBehaviour
         var renderer = GetComponent<Renderer>();
         renderer.material.color = weaponObj.weaponColor;
         rigidbodyObj = GetComponent<Rigidbody>();
-        rigidbodyObj.AddForce(Forces);
+        rigidbodyObj.AddRelativeForce(Forces);
         Destroy(gameObject, 3f);
     }
 

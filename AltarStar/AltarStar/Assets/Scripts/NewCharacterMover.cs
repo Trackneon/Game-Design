@@ -26,9 +26,9 @@ public class NewCharacterMover : MonoBehaviour
                 position.y = jumpSpeed;
             }
 
-            if (position != Vector3.zero)
+            if (position.x != 0 || position.z !=0)
             {
-                controller.transform.forward = position;
+                controller.transform.forward = new Vector3(position.x, 0, position.z);
             }
         }
 

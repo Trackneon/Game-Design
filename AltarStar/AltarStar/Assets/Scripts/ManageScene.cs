@@ -9,7 +9,7 @@ public class ManageScene : MonoBehaviour
     // Start is called before the first frame update
     public void Play()
     {
-        SceneManager.LoadScene("NewGame");
+        SceneManager.LoadScene("NewMapTest");
     }
 
     // Update is called once per frame
@@ -22,5 +22,10 @@ public class ManageScene : MonoBehaviour
     public void GameOver()
     {
         SceneManager.LoadScene("GameOver");
+    }
+
+    public void PortalChamber()
+    {
+        SceneManager.LoadScene("PortalChamber");
     }
 }

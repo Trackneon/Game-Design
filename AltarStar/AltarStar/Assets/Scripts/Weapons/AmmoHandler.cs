@@ -18,7 +18,7 @@ public class AmmoHandler : MonoBehaviour
         renderer.material.color = weaponObj.weaponColor;
         rigidbodyObj = GetComponent<Rigidbody>();
         rigidbodyObj.AddRelativeForce(Forces);
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 2f);
     }
 
     void OnTriggerEnter (Collider other)
@@ -28,6 +28,20 @@ public class AmmoHandler : MonoBehaviour
             GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
             Destroy(effectIns, 2f);
             Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+
+        if(other.gameObject.tag == "Border")
+        {
+            GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+            Destroy(effectIns, 2f);
+            Destroy(gameObject);
+        }
+
+        if (other.gameObject.tag == "Obstacle")
+        {
+            GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+            Destroy(effectIns, 2f);
             Destroy(gameObject);
         }
     }

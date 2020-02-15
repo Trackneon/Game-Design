@@ -5,22 +5,22 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PushObject : MonoBehaviour
 {
-    public float ObMass = 300;
-    public float PushAtMass = 100;
-    public float PushingTime;
-    public float ForceToPush;
+    public float mass = 300;
+    public float push = 100;
+    public float pushTime;
+    public float force;
     Rigidbody rb;
     public float vel;
     Vector3 dir;
 
     Vector3 lastPos;
-    float _PushingTime = 0;
+    float _pushTime = 0;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         if (rb == null) return;
-        rb.mass = ObMass;
+        rb.mass = mass;
     }
 
     bool IsMoving()
@@ -44,19 +44,19 @@ public class PushObject : MonoBehaviour
 
         if (rb.isKinematic == false)
         {
-            _PushingTime += Time.deltaTime;
-            if (_PushingTime >= PushingTime)
+            _pushTime += Time.deltaTime;
+            if (_pushTime >= pushTime)
             {
-                _PushingTime = PushingTime;
+                _pushTime = pushTime;
             }
 
-            rb.mass = Mathf.Lerp(ObMass, PushAtMass, _PushingTime / PushingTime);
-            rb.AddForce(dir * ForceToPush, ForceMode.Force);
+            rb.mass = Mathf.Lerp(mass, push, _pushTime / pushTime);
+            rb.AddForce(dir * force, ForceMode.Force);
         }
         else
         {
-            rb.mass = ObMass;
-            _PushingTime = 0;
+            rb.mass = mass;
+            _pushTime = 0;
 
         }
     }

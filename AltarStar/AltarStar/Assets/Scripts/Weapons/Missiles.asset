@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b660918a3d153c64b9e139b2b2e41f0b, type: 3}
-  m_Name: Sword
+  m_Name: Missiles
   m_EditorClassIdentifier: 
   damageAction: {fileID: 0}
   weaponColor: {r: 0, g: 0.70840406, b: 1, a: 1}
   weaponArt: {fileID: 5435644471075980148, guid: 4124a642c0aad3e49aa65025b0506147,
     type: 3}
-  ammoObj: {fileID: 719641713431110899, guid: 9ec438b8d52d7f2468dd256129e992bd, type: 3}
+  ammoObj: {fileID: 719641713431110899, guid: 3203c8e9b3c19b24c9a5548d14387f59, type: 3}

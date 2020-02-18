@@ -8,6 +8,7 @@ TagManager:
   - Detection
   - Border
   - Obstacle
+  - Key2Trigger
   layers:
   - Default
   - TransparentFX
@@ -23,9 +24,9 @@ TagManager:
   - Ground
   - Obstacle
   - Player
-  - 
-  - 
-  - 
+  - PushBlock
+  - Trigger
+  - EnemyWeapon
   - 
   - 
   - 

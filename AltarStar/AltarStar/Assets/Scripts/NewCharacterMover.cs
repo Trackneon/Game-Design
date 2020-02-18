@@ -8,6 +8,7 @@ public class NewCharacterMover : MonoBehaviour
     public float moveSpeed = 50f, jumpSpeed = 150f, gravity = 3f;
     private Vector3 position;
     private CharacterController controller;
+    public float pushPower = 2.0f;
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -34,5 +35,24 @@ public class NewCharacterMover : MonoBehaviour
 
         position.y -= gravity;
         controller.Move(position * Time.deltaTime);
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody body = hit.collider.attachedRigidbody;
+
+        if (body == null || body.isKinematic)
+        {
+            return;
+        }
+
+        if (hit.moveDirection.y < -0.3)
+        {
+            return;
+        }
+
+        Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+
+        body.velocity = pushDir * pushPower;
     }
 }

@@ -235,7 +235,7 @@ PrefabInstance:
     - target: {fileID: 2680843981304306702, guid: b7fff7dd13faab847a85dcd8f1cb320c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.406
       objectReference: {fileID: 0}
     - target: {fileID: 2680843981304306702, guid: b7fff7dd13faab847a85dcd8f1cb320c,
         type: 3}
@@ -300,7 +300,7 @@ PrefabInstance:
     - target: {fileID: 2680843981304306709, guid: b7fff7dd13faab847a85dcd8f1cb320c,
         type: 3}
       propertyPath: m_Name
-      value: Weapon (1)
+      value: Missile
       objectReference: {fileID: 0}
     - target: {fileID: 2680843981304306698, guid: b7fff7dd13faab847a85dcd8f1cb320c,
         type: 3}
@@ -313,6 +313,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: d23ebf73b3395074c9ffb4a51161617c,
         type: 2}
+    - target: {fileID: 2680843981304306698, guid: b7fff7dd13faab847a85dcd8f1cb320c,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 4027479267439748710, guid: 3203c8e9b3c19b24c9a5548d14387f59,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7fff7dd13faab847a85dcd8f1cb320c, type: 3}
 --- !u!1001 &540642253
@@ -339,7 +345,7 @@ PrefabInstance:
     - target: {fileID: 2248337134151443195, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
         type: 3}
       propertyPath: m_Name
-      value: MiniBoss
+      value: Boss
       objectReference: {fileID: 0}
     - target: {fileID: 2248337134151443072, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
         type: 3}
@@ -411,6 +417,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 22.095497
       objectReference: {fileID: 0}
+    - target: {fileID: 691619823412920785, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 992802478}
     - target: {fileID: 2248337134151443077, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
         type: 3}
       propertyPath: m_Radius
@@ -439,7 +450,7 @@ PrefabInstance:
     - target: {fileID: 2680843981304306702, guid: b7fff7dd13faab847a85dcd8f1cb320c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.406
       objectReference: {fileID: 0}
     - target: {fileID: 2680843981304306702, guid: b7fff7dd13faab847a85dcd8f1cb320c,
         type: 3}
@@ -504,7 +515,7 @@ PrefabInstance:
     - target: {fileID: 2680843981304306709, guid: b7fff7dd13faab847a85dcd8f1cb320c,
         type: 3}
       propertyPath: m_Name
-      value: Weapon
+      value: Blaster
       objectReference: {fileID: 0}
     - target: {fileID: 2680843981304306698, guid: b7fff7dd13faab847a85dcd8f1cb320c,
         type: 3}
@@ -1340,9 +1351,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67674ec4244ade24c9b3a0619a9fc6ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 100
-  jumpSpeed: 150
+  moveSpeed: 50
+  jumpSpeed: 50
   gravity: 3
+  pushPower: 10
 --- !u!143 &992802480
 CharacterController:
   m_ObjectHideFlags: 0

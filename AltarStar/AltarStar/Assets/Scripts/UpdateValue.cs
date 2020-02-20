@@ -6,11 +6,10 @@ public class UpdateValue : MonoBehaviour
 {
     public FloatData data;
     public FloatData newData;
-    public float value = 20f;
 
-    public void Start()
+    void Start()
     {
-        data.value = 20f;
+        data.value = 1f;
     }
     public void ValueUpdate()
     {

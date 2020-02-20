@@ -13,13 +13,13 @@ public class EnemyFireTest : MonoBehaviour
 
     public Rigidbody projectile;
 
-    void Start()
+    public void Start()
     {
         float rand = Random.Range(1.0f, 2.0f);
         InvokeRepeating("Shoot", 2, rand);
     }
 
-    void Shoot()
+    public void Shoot()
     {
 
         if (onRange)
@@ -34,7 +34,7 @@ public class EnemyFireTest : MonoBehaviour
 
     }
 
-    void Update()
+    public void Update()
     {
 
         onRange = Vector3.Distance(transform.position, player.position) < range;
@@ -43,7 +43,7 @@ public class EnemyFireTest : MonoBehaviour
             transform.LookAt(player);
     }
 
-    void OnCollisionEnter(Collision other)
+    public void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Player")
         {

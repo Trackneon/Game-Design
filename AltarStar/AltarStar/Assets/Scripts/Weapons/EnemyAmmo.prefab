@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7400255136941222512}
   - component: {fileID: 2955599604722152529}
   - component: {fileID: -22295614894075242}
+  - component: {fileID: -1135989351415300240}
   m_Layer: 16
   m_Name: EnemyAmmo
   m_TagString: Untagged
@@ -109,3 +110,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 27.05, z: 1.0000001}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-1135989351415300240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719641713431110899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293fb4e59c9033548bfa0126f22dfb7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 67a212c5ddddf8743a41d2aedde71883, type: 2}
+  newData: {fileID: 11400000, guid: 4b453a015af713f49ad6d69a9a8edbf9, type: 2}
+  amount: {fileID: 11400000, guid: 301980b640d39f644bd0350b8b5bbdaf, type: 2}

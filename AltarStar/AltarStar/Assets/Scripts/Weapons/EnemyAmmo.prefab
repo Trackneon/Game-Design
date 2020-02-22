@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2955599604722152529}
   - component: {fileID: -22295614894075242}
   - component: {fileID: -1026174830781087727}
-  - component: {fileID: -3910815928266249237}
   m_Layer: 16
   m_Name: EnemyAmmo
   m_TagString: Untagged
@@ -156,17 +155,3 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &-3910815928266249237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719641713431110899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7306aef29ffa08248a59d6d7d00819e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obj: {fileID: 3514486976410653576, guid: fedb985f8ff18094c97205be9196b1aa, type: 3}
-  location: {fileID: 4027479267439748710}

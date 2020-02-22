@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class TargetEnemy : MonoBehaviour
 {
-    public Transform player;
-    private Transform target;
-    private Enemy targetEnemy;
+    public Transform weapon;
+    public Transform target;
+    public Enemy targetEnemy;
 
     public float range = 15f;
 
@@ -34,11 +34,11 @@ public class TargetEnemy : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.Tab) & nearestEnemy != null && shortestDistance <= range)
+        if (Input.GetKey(KeyCode.LeftShift) && nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
             targetEnemy = nearestEnemy.GetComponent<Enemy>();
-            player.LookAt(target);
+            weapon.LookAt(target);
         }
         else
         {

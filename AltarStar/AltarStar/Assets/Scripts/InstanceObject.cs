@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(menuName = "Instancing Object")]
-public class InstanceObject : MonoBehaviour
+public class InstanceObject : ScriptableObject
 {
     public GameObject prefab;
 

@@ -9,6 +9,7 @@ TagManager:
   - Border
   - Obstacle
   - Key2Trigger
+  - Target
   layers:
   - Default
   - TransparentFX

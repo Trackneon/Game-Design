@@ -33,9 +33,8 @@ public class TargetEnemy : MonoBehaviour
                 nearestEnemy = enemy;
             }
         }
-        //return nearestEnemy; //new
 
-        if (Input.GetKey(KeyCode.LeftShift) && nearestEnemy != null && shortestDistance <= range)
+        if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
             targetEnemy = nearestEnemy.GetComponent<Enemy>();

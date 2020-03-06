@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public void EndEnemy()
+    public GameObject me;
+
+
+   public void Die()
     {
-        print(message: "End Enemy");
+        Destroy(me);
     }
 }

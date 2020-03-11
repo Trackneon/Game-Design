@@ -5219,7 +5219,7 @@ PrefabInstance:
         type: 3}
       propertyPath: location
       value: 
-      objectReference: {fileID: 992802478}
+      objectReference: {fileID: 1817436396}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7fff7dd13faab847a85dcd8f1cb320c, type: 3}
 --- !u!1 &606074042 stripped
@@ -17147,7 +17147,8 @@ MonoBehaviour:
   weapon: {fileID: 1817436396}
   target: {fileID: 0}
   targetEnemy: {fileID: 0}
-  range: 100
+  marker: {fileID: 0}
+  range: 200
 --- !u!1 &2064499962
 GameObject:
   m_ObjectHideFlags: 0

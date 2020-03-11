@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b24616785afe98748b8f4611271f5dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Forces: {x: 0, y: 0, z: 50000}
+  Forces: {x: 0, y: 0, z: 10000}
   weaponObj: {fileID: 0}
   enemyPrefab: {fileID: 7952199792157113192, guid: 33381712e99ace6469146acc33b64c0b,
     type: 3}

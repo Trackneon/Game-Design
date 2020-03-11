@@ -7,6 +7,7 @@ public class TargetEnemy : MonoBehaviour
     public Transform weapon;
     public Transform target;
     public Enemy targetEnemy;
+    public GameObject marker;
 
     public float range = 15f;
 
@@ -34,15 +35,17 @@ public class TargetEnemy : MonoBehaviour
             }
         }
 
-        if (nearestEnemy != null && shortestDistance <= range)
+        if (Input.GetKey(KeyCode.LeftShift) && nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
             targetEnemy = nearestEnemy.GetComponent<Enemy>();
             weapon.LookAt(target);
+            
         }
         else
         {
             target = null;
+
         }
 
     }

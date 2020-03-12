@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TargetEnemy : MonoBehaviour
 {
@@ -40,7 +38,6 @@ public class TargetEnemy : MonoBehaviour
             target = nearestEnemy.transform;
             targetEnemy = nearestEnemy.GetComponent<Enemy>();
             weapon.LookAt(target);
-            
         }
         else
         {

@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 5403886548596044458}
   - component: {fileID: 2955599604722152529}
   - component: {fileID: -22295614894075242}
-  - component: {fileID: -6199785270858496878}
-  m_Layer: 8
+  - component: {fileID: -8946086754421247170}
+  m_Layer: 17
   m_Name: Missiles
-  m_TagString: Untagged
+  m_TagString: Missile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,8 +96,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Forces: {x: 0, y: 0, z: 10000}
   weaponObj: {fileID: 0}
-  enemyPrefab: {fileID: 7952199792157113192, guid: 33381712e99ace6469146acc33b64c0b,
-    type: 3}
   impactEffect: {fileID: 3514486976410653576, guid: 7a638d0a7860b484a82daf20d287a436,
     type: 3}
 --- !u!54 &2955599604722152529
@@ -129,7 +127,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 3.1929126, z: 1.0000001}
   m_Center: {x: 0, y: 0.0482389, z: 0}
---- !u!114 &-6199785270858496878
+--- !u!114 &-8946086754421247170
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,14 +142,15 @@ MonoBehaviour:
   TriggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 0eabde62985c5c743956c206d9066eb0, type: 2}
-        m_MethodName: UpdateValue
-        m_Mode: 4
+      - m_Target: {fileID: 8974296761501143006, guid: 8b5b83b78c6d1b749bd0db96b2d1c08e,
+          type: 3}
+        m_MethodName: ValueUpdate
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: -0.2
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2

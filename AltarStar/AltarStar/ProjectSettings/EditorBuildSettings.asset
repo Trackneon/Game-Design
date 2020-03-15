@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PortalChamber.unity
     guid: 4de88db06f5f2ff448b81f33ed8a3ad1
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: da35b254b2411f14ead7034533343e95
   m_configObjects: {}

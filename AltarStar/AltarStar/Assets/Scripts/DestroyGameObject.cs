@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DestroyGameObject : MonoBehaviour
 {
@@ -9,13 +10,18 @@ public class DestroyGameObject : MonoBehaviour
 
     void Start()
     {
-        data.value = 1f;
+        //data.value = 1f;
     }
-    public void DestroyObj()
+    public void Update()
     {
-        if (data.value <= 0)
+        //if (data.value <= 0f && obj.tag == "Enemy")
+        //{
+          //  Destroy(obj);
+        //}
+
+        if (data.value <= 0f && obj.tag == "Player")
         {
-            Destroy(obj);
+            SceneManager.LoadScene("GameOver");
         }
     }
 

@@ -14,6 +14,6 @@ public class UpdateValue : MonoBehaviour
     public void ValueUpdate()
     {
         data.value += newData.value;
+        //Debug.Log("asd");
     }
-
 }

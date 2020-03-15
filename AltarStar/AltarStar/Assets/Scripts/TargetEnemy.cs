@@ -13,6 +13,11 @@ public class TargetEnemy : MonoBehaviour
     {
         
     }
+
+    void Awake()
+    {
+
+    }
     void Update()
     {
         UpdateTarget();
@@ -33,7 +38,7 @@ public class TargetEnemy : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.LeftShift) && nearestEnemy != null && shortestDistance <= range)
+        if (Input.GetAxis("Target") > 0 && nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
             targetEnemy = nearestEnemy.GetComponent<Enemy>();
@@ -42,6 +47,7 @@ public class TargetEnemy : MonoBehaviour
         else
         {
             target = null;
+
 
         }
 

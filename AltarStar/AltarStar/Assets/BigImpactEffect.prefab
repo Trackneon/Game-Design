@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7318503775577055241}
   - component: {fileID: 4125574483261326673}
   - component: {fileID: 47066603789024934}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: BigImpactEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

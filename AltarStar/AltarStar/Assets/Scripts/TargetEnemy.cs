@@ -4,6 +4,7 @@ public class TargetEnemy : MonoBehaviour
 {
     public Transform weapon;
     public Transform target;
+    public Transform player;
     public Enemy targetEnemy;
     public GameObject marker;
 
@@ -48,7 +49,7 @@ public class TargetEnemy : MonoBehaviour
         {
             target = null;
 
-
+            transform.rotation = player.rotation;
         }
 
     }

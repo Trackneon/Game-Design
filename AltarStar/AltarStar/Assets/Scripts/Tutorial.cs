@@ -1,11 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour
 {
-   public void DisplayTutorial()
+    public GameObject tutDisplay;
+
+    void Start()
     {
-        print(message: "Collect the four keys to gain access to the portal!");
+        tutDisplay.SetActive(false);
     }
+
+    void OnTriggerEnter (Collider player)
+    {
+        if (player.gameObject.tag == "Player")
+        {
+            tutDisplay.SetActive(true);
+            StartCoroutine("WaitForSec");
+        }
+    }
+    IEnumerator WaitForSec()
+    {
+        yield return new WaitForSeconds(8);
+        Destroy(tutDisplay);
+        Destroy(gameObject);
+    }
+
 }

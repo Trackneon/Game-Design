@@ -766,7 +766,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 22d32faf6b7cca4458d6a3fa64ff599f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -808,7 +808,8 @@ GameObject:
   - component: {fileID: 93553141}
   - component: {fileID: 93553140}
   - component: {fileID: 93553138}
-  m_Layer: 0
+  - component: {fileID: 93553139}
+  m_Layer: 22
   m_Name: PushBlockTut
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -828,6 +829,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutDisplay: {fileID: 351965066}
+--- !u!114 &93553139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93553137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559c2af593f1a7942bc6519666428a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 93553138}
+        m_MethodName: TutDisplay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  TriggerExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 93553138}
+        m_MethodName: TutHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &93553140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -894,13 +939,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93553137}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1320.1681, y: 143.28806, z: -886.8903}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1207.3, y: 143.28806, z: -679.6}
   m_LocalScale: {x: 54.497837, y: 57.177036, z: 5.2346263}
   m_Children: []
   m_Father: {fileID: 834881791}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &95199762
 GameObject:
   m_ObjectHideFlags: 0
@@ -3800,7 +3845,8 @@ GameObject:
   - component: {fileID: 408416493}
   - component: {fileID: 408416492}
   - component: {fileID: 408416490}
-  m_Layer: 0
+  - component: {fileID: 408416491}
+  m_Layer: 22
   m_Name: GolfTutorial
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -3820,6 +3866,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutDisplay: {fileID: 1588208321}
+--- !u!114 &408416491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408416489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559c2af593f1a7942bc6519666428a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 408416490}
+        m_MethodName: TutDisplay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  TriggerExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 408416490}
+        m_MethodName: TutHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &408416492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4930,17 +5020,17 @@ PrefabInstance:
     - target: {fileID: 2308665016788153624, guid: 50a26d77f039c2a4781007494583333a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 19.514124
+      value: 13.383957
       objectReference: {fileID: 0}
     - target: {fileID: 2308665016788153624, guid: 50a26d77f039c2a4781007494583333a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 19.514124
+      value: 13.383957
       objectReference: {fileID: 0}
     - target: {fileID: 2308665016788153624, guid: 50a26d77f039c2a4781007494583333a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 19.514124
+      value: 13.383957
       objectReference: {fileID: 0}
     - target: {fileID: 3596252255531670635, guid: 50a26d77f039c2a4781007494583333a,
         type: 3}
@@ -11613,7 +11703,8 @@ GameObject:
   - component: {fileID: 1415576953}
   - component: {fileID: 1415576952}
   - component: {fileID: 1415576957}
-  m_Layer: 0
+  - component: {fileID: 1415576956}
+  m_Layer: 22
   m_Name: StartTutorial
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -11693,6 +11784,50 @@ Transform:
   m_Father: {fileID: 834881791}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1415576956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415576951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559c2af593f1a7942bc6519666428a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1415576957}
+        m_MethodName: TutDisplay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  TriggerExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1415576957}
+        m_MethodName: TutHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1415576957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13337,7 +13472,8 @@ GameObject:
   - component: {fileID: 1538651130}
   - component: {fileID: 1538651129}
   - component: {fileID: 1538651128}
-  m_Layer: 0
+  - component: {fileID: 1538651132}
+  m_Layer: 22
   m_Name: GrappleTut
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -13382,8 +13518,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.99999976, y: 1, z: 9.128409}
-  m_Center: {x: 0, y: 0, z: 4.064205}
+  m_Size: {x: 1.2177271, y: 1, z: 14.483178}
+  m_Center: {x: 0.040432483, y: 0, z: 11.26567}
 --- !u!23 &1538651130
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13430,6 +13566,61 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538651126}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1538651132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538651126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559c2af593f1a7942bc6519666428a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1538651128}
+        m_MethodName: TutDisplay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  TriggerExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1538651128}
+        m_MethodName: TutHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1538651130}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1551081921
 GameObject:
   m_ObjectHideFlags: 0
@@ -13966,7 +14157,7 @@ PrefabInstance:
     - target: {fileID: 3479068923745500238, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
         type: 3}
       propertyPath: data
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8211949859762223569, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
         type: 3}
@@ -13977,6 +14168,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Speed
       value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068782732258801281, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.061621137
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068782732258801281, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.13857357
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068782732258801281, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.059088174
+      objectReference: {fileID: 0}
+    - target: {fileID: 1665980431146141841, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.06927059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1665980431146141841, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15577565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1665980431146141841, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.06642319
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eb99e55d49c8b04a8bceb580cb60f92, type: 3}
@@ -15198,7 +15419,8 @@ GameObject:
   - component: {fileID: 1724159839}
   - component: {fileID: 1724159838}
   - component: {fileID: 1724159837}
-  m_Layer: 0
+  - component: {fileID: 1724159841}
+  m_Layer: 22
   m_Name: LockOnTut
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -15243,8 +15465,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7690735, y: 1, z: 9.128409}
-  m_Center: {x: 0.30452493, y: 0, z: 4.064205}
+  m_Size: {x: 1.8465854, y: 1, z: 23.059944}
+  m_Center: {x: 0.09670882, y: 0, z: -2.901582}
 --- !u!23 &1724159839
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15291,6 +15513,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724159835}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1724159841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724159835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559c2af593f1a7942bc6519666428a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1724159837}
+        m_MethodName: TutDisplay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  TriggerExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1724159837}
+        m_MethodName: TutHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1726085662
 GameObject:
   m_ObjectHideFlags: 0
@@ -18428,6 +18694,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199140145379368732, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: range
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6262186481051370169, guid: e5769173620b87d45ad1040662bf2dae, type: 3}

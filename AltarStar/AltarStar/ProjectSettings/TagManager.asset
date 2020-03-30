@@ -12,6 +12,7 @@ TagManager:
   - Target
   - Weapon
   - Missile
+  - grapplePoint
   layers:
   - Default
   - TransparentFX
@@ -33,8 +34,8 @@ TagManager:
   - Missile
   - Impact Effect
   - Button
-  - 
-  - 
+  - Hookshot
+  - GrappleObj
   - 
   - 
   - 

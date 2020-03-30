@@ -715,8 +715,8 @@ GameObject:
   - component: {fileID: 85713252}
   - component: {fileID: 85713251}
   - component: {fileID: 85713250}
-  m_Layer: 0
-  m_Name: Cube (1)
+  m_Layer: 20
+  m_Name: HookPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -731,7 +731,7 @@ Transform:
   m_GameObject: {fileID: 85713248}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -255.959, y: 0, z: 822.1398}
-  m_LocalScale: {x: 8.7278, y: 8.7278, z: 8.7278}
+  m_LocalScale: {x: 5.2530003, y: 5.253002, z: 5.2530003}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -794,7 +794,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85713248}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &93553137
 GameObject:
   m_ObjectHideFlags: 0
@@ -7416,9 +7416,9 @@ GameObject:
   - component: {fileID: 844875570}
   - component: {fileID: 844875569}
   - component: {fileID: 844875568}
-  m_Layer: 12
+  m_Layer: 21
   m_Name: Building2 (11)
-  m_TagString: Obstacle
+  m_TagString: grapplePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8754,6 +8754,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 67a212c5ddddf8743a41d2aedde71883, type: 2}
   obj: {fileID: 4665959582255012434, guid: e5769173620b87d45ad1040662bf2dae, type: 3}
+--- !u!114 &992802487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992802474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8656bebb703e16349ad83e7a9e0826e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 1086521771}
+  target: {fileID: 0}
+  player: {fileID: 992802478}
+  targetgrapplePoint: {fileID: 0}
+  marker: {fileID: 0}
+  maxAngle: 45
+  range: 1000
 --- !u!1 &1006436268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2248337134151443195, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
@@ -10662,9 +10681,9 @@ GameObject:
   - component: {fileID: 1287376203}
   - component: {fileID: 1287376202}
   - component: {fileID: 1287376201}
-  m_Layer: 12
+  m_Layer: 21
   m_Name: Building2 (13)
-  m_TagString: Obstacle
+  m_TagString: grapplePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12834,9 +12853,9 @@ GameObject:
   - component: {fileID: 1536497577}
   - component: {fileID: 1536497576}
   - component: {fileID: 1536497575}
-  m_Layer: 12
+  m_Layer: 21
   m_Name: Building2 (12)
-  m_TagString: Obstacle
+  m_TagString: grapplePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14891,9 +14910,9 @@ GameObject:
   - component: {fileID: 1726085666}
   - component: {fileID: 1726085665}
   - component: {fileID: 1726085664}
-  m_Layer: 12
+  m_Layer: 21
   m_Name: Building2 (10)
-  m_TagString: Obstacle
+  m_TagString: grapplePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15680,9 +15699,9 @@ GameObject:
   - component: {fileID: 1840023795}
   - component: {fileID: 1840023794}
   - component: {fileID: 1840023793}
-  m_Layer: 12
+  m_Layer: 21
   m_Name: Building2 (9)
-  m_TagString: Obstacle
+  m_TagString: grapplePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17402,9 +17421,9 @@ GameObject:
   - component: {fileID: 2126991909}
   - component: {fileID: 2126991908}
   - component: {fileID: 2126991907}
-  m_Layer: 12
+  m_Layer: 21
   m_Name: Building2 (14)
-  m_TagString: Obstacle
+  m_TagString: grapplePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18002,6 +18021,16 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 992802474}
+    - target: {fileID: 5973986428232752956, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: m_Layer
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060771847811855737, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: m_Layer
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6262186481051370169, guid: e5769173620b87d45ad1040662bf2dae, type: 3}
     - {fileID: 8914189472793733297, guid: e5769173620b87d45ad1040662bf2dae, type: 3}

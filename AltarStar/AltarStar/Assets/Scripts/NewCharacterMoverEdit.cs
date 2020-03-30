@@ -34,6 +34,7 @@ public class NewCharacterMoverEdit : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         hookshotTransform.gameObject.SetActive(false);
+        debugHitPointTransform.gameObject.SetActive(false);
         state = State.Normal;
     }
 
@@ -112,6 +113,7 @@ public class NewCharacterMoverEdit : MonoBehaviour
                 debugHitPointTransform.position = grapplePoint.point;
                 hookshotPosition = grapplePoint.point;
                 hookshotSize = 0f;
+                debugHitPointTransform.gameObject.SetActive(true);
                 hookshotTransform.gameObject.SetActive(true);
                 hookshotTransform.localScale = Vector3.zero;
                 state = State.HookshotThrown;
@@ -168,6 +170,7 @@ public class NewCharacterMoverEdit : MonoBehaviour
     {
         state = State.Normal;
         hookshotTransform.gameObject.SetActive(false);
+        debugHitPointTransform.gameObject.SetActive(false);
     }
     private bool TestInputDownHookshot()
     {

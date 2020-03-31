@@ -19,6 +19,7 @@ public class NewCharacterMoverEdit : MonoBehaviour
 
     private CharacterController controller;
     public GameObject player;
+    private LineRenderer line;
 
     private float hookshotSize;
 
@@ -36,6 +37,8 @@ public class NewCharacterMoverEdit : MonoBehaviour
         hookshotTransform.gameObject.SetActive(false);
         debugHitPointTransform.gameObject.SetActive(false);
         state = State.Normal;
+        line = GetComponent<LineRenderer>();
+        
     }
 
     void Update()
@@ -53,8 +56,11 @@ public class NewCharacterMoverEdit : MonoBehaviour
                 break;
             case State.HookshotFlyingPlayer:
                 HookshotMovement();
+                line.SetPosition(0, player.transform.position);
+                line.SetPosition(1, debugHitPointTransform.position);
                 break;
         }
+
     }
 
     private void CharacterMovement()
@@ -117,7 +123,7 @@ public class NewCharacterMoverEdit : MonoBehaviour
                 hookshotTransform.gameObject.SetActive(true);
                 hookshotTransform.localScale = Vector3.zero;
                 state = State.HookshotThrown;
-                Debug.DrawRay(transform.position, forward, Color.green);
+                //Debug.DrawRay(transform.position, forward, Color.green);
             }
         }
     }
@@ -126,10 +132,15 @@ public class NewCharacterMoverEdit : MonoBehaviour
     {
         hookshotTransform.LookAt(hookshotPosition);
 
-        float hookShootSpeed = 1000f;
+        //float hookShootSpeed = 1000f;
         //hookshotSize = Vector3.Distance(hookshotPosition, transform.position);
-        hookshotSize += hookShootSpeed * Time.deltaTime;
-        hookshotTransform.localScale = new Vector3(1, 1, hookshotSize);
+        hookshotSize = Vector3.Distance(debugHitPointTransform.position, transform.position);
+
+
+        //hookshotSize += hookShootSpeed * Time.deltaTime;
+        //hookshotTransform.localScale = new Vector3(1, 1, hookshotSize);
+        
+
 
         if (hookshotSize >= Vector3.Distance(transform.position, hookshotPosition))
         {

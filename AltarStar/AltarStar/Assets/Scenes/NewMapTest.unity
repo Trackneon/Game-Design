@@ -3348,7 +3348,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
-    m_LineSpacing: 0.75
+    m_LineSpacing: 1
   m_Text: Push the blocks to pave your way to the key!
 --- !u!222 &351965069
 CanvasRenderer:
@@ -9384,8 +9384,9 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
-    m_LineSpacing: 0.75
-  m_Text: When enemies are near, press ZL to lock on to the closest enemy!
+    m_LineSpacing: 1
+  m_Text: When enemies are near, press Left Trigger or Numpad Enter to lock on to
+    the closest enemy!
 --- !u!222 &1063607641
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12972,9 +12973,9 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
-    m_LineSpacing: 0.75
-  m_Text: Press and while holding ZR, press Y to fire your grapple to nearby pillars/grapple
-    points.
+    m_LineSpacing: 1
+  m_Text: Press and while holding Right Trigger or Numpad 3, press Y or Numpad 1
+    to fire your hookshot and pull yourslef to nearby pillars/grapple points.
 --- !u!222 &1507096847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13915,8 +13916,9 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
-    m_LineSpacing: 0.75
-  m_Text: Hit the Orb into the trigger at the bottom of the room to reveal the key!
+    m_LineSpacing: 1
+  m_Text: Use your hookshot to hit the orb into the trigger at the bottom of the
+    room to reveal the key!
 --- !u!222 &1588208324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14982,9 +14984,10 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
-    m_LineSpacing: 0.75
-  m_Text: "Collect the four keys to gain access to the portal! \nPress A to fire
-    your blaster.\nPress X to fire missiles.\nPress B to doge enemy fire."
+    m_LineSpacing: 1
+  m_Text: "Collect the four keys to gain access to the portal! \nPress A or Numpad
+    0 to fire your blaster.\nPress X or Numpad 2 to fire missiles.\nPress B or Space
+    to doge enemy fire."
 --- !u!222 &1666801794
 CanvasRenderer:
   m_ObjectHideFlags: 0

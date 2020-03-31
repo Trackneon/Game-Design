@@ -26,6 +26,6 @@ public class ManageScene : MonoBehaviour
 
     public void PortalChamber()
     {
-        SceneManager.LoadScene("PortalChamber");
+        SceneManager.LoadScene("NewBossArenaChamber");
     }
 }

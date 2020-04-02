@@ -210,6 +210,41 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3403059695828742345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3100763418854556600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559c2af593f1a7942bc6519666428a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7400255136941222512, guid: 9ec438b8d52d7f2468dd256129e992bd,
+          type: 3}
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 9e51dce5ac8605a48825aae5ae9aae37,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  TriggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &7265366508315135003
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +392,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b5b83b78c6d1b749bd0db96b2d1c08e, type: 3}
+--- !u!1 &3100763418854556600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7479113925156384808, guid: 8b5b83b78c6d1b749bd0db96b2d1c08e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5531328107484918672}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6910176330305617527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1380029313082461671, guid: 8b5b83b78c6d1b749bd0db96b2d1c08e,

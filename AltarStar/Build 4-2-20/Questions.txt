@@ -1,0 +1,11 @@
+1. How does the difficulty of the level feel? ie. -puzzles? -number of enemies? -strength of enemies? 
+
+2. How does the hookshot/grapple ability feel? 
+(other than how the ability functions, any ideas or other ways to implement it in the game?)
+
+3. How does the pace of the game feel? 
+(too fast, too slow, just right? Maybe give some examples of parts in the game if you can)
+
+4. What simple effects would add to the gameplay? 
+(a couple I've thought of and plan on implementing are: player & enemy change color when damaged, target symbol/UI over
+target enemy/object, bullet and enemy explosion (already implemented). Just any other ideas you may have for similar effects)

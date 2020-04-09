@@ -7993,6 +7993,41 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: debugHitPointTransform
+      value: 
+      objectReference: {fileID: 85713249}
+    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: jumpSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: hookshotTransform
+      value: 
+      objectReference: {fileID: 1086521771}
+    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 992802474}
+    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4665959582255012438, guid: e5769173620b87d45ad1040662bf2dae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8048,6 +8083,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4665959582255012439, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 4665959582255012439, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4665959582255012439, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: jumpSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4665959582255012439, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: pushPower
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4665959582255012439, guid: e5769173620b87d45ad1040662bf2dae,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4665959582255012425, guid: e5769173620b87d45ad1040662bf2dae,
         type: 3}
       propertyPath: location
@@ -8098,31 +8158,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 992802478}
-    - target: {fileID: 4665959582255012439, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: dashSpeed
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 4665959582255012439, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 4665959582255012439, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: jumpSpeed
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4665959582255012439, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: pushPower
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4665959582255012439, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7346660587763429337, guid: e5769173620b87d45ad1040662bf2dae,
         type: 3}
       propertyPath: m_Enabled
@@ -8187,41 +8222,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: debugHitPointTransform
-      value: 
-      objectReference: {fileID: 85713249}
-    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: jumpSpeed
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: dashSpeed
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: hookshotTransform
-      value: 
-      objectReference: {fileID: 1086521771}
-    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 992802474}
-    - target: {fileID: 4390262701476330018, guid: e5769173620b87d45ad1040662bf2dae,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5973986428232752956, guid: e5769173620b87d45ad1040662bf2dae,
         type: 3}

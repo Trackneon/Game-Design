@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 7400255136941222512}
   - component: {fileID: 2955599604722152529}
   - component: {fileID: -22295614894075242}
-  - component: {fileID: -1026174830781087727}
   - component: {fileID: 9097541008746870734}
+  - component: {fileID: 593420061227612532}
   m_Layer: 16
-  m_Name: EnemyAmmo
+  m_Name: EnemyBossAmmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 719641713431110899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.8194008, y: 3.8, z: 5.952877}
-  m_LocalScale: {x: 4.720237, y: 0.78588426, z: 5.975174}
+  m_LocalScale: {x: 10.5704975, y: 1.7599092, z: 13.380804}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a5f9193fc85669244bbadbd051adeb5f, type: 2}
+  - {fileID: 2100000, guid: 2dbf9c048085aa041a033a7b7119fc53, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -111,7 +111,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9999999, y: 4.0973563, z: 1.0000001}
   m_Center: {x: 0, y: 0.34315345, z: 0}
---- !u!114 &-1026174830781087727
+--- !u!114 &9097541008746870734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719641713431110899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cca15a7581b4c14ca5c955a1af72751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEffect: {fileID: 3514486976410653576, guid: fedb985f8ff18094c97205be9196b1aa,
+    type: 3}
+--- !u!114 &593420061227612532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,17 +159,3 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &9097541008746870734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719641713431110899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cca15a7581b4c14ca5c955a1af72751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impactEffect: {fileID: 3514486976410653576, guid: fedb985f8ff18094c97205be9196b1aa,
-    type: 3}

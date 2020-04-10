@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AreaTrigger : MonoBehaviour
+public class GolfTrigger : MonoBehaviour
 {
     public GameObject door;
-    public GameObject key;
+    public GameObject ball;
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "grapplePoint")
         {
             door.SetActive(false);
-            key.SetActive(false);
+            ball.SetActive(false);
         }
 
     }

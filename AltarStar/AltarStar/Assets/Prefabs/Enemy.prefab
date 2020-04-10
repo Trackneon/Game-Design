@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 1168861964727829281}
   - component: {fileID: 4997334272107934273}
   - component: {fileID: 8974296761501143006}
-  - component: {fileID: 8775734333093996879}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Enemy
@@ -128,8 +127,6 @@ MonoBehaviour:
   player: {fileID: 0}
   range: 200
   bulletImpulse: 500
-  impactEffect: {fileID: 3514486976410653576, guid: fedb985f8ff18094c97205be9196b1aa,
-    type: 3}
   projectile: {fileID: 2955599604722152529, guid: 7dca4b41fb5ac604096adddb9cf1f6e2,
     type: 3}
 --- !u!114 &8974296761501143006
@@ -149,50 +146,3 @@ MonoBehaviour:
   newData: {fileID: 11400000, guid: 095bec4e8e5cc4e46acbf5b2620cfc97, type: 2}
   mData: {fileID: 11400000, guid: 40a3380f830b1e246a03ec37b7df9acc, type: 2}
   isDead: 0
---- !u!114 &8775734333093996879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7479113925156384808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 559c2af593f1a7942bc6519666428a27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TriggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1306327910792549798, guid: 9d474675591f58441b2c00d3693283d5,
-          type: 3}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  TriggerExitEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1306327910792549795, guid: 9d474675591f58441b2c00d3693283d5,
-          type: 3}
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 93156df51596177438f0989cf936bab0,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null

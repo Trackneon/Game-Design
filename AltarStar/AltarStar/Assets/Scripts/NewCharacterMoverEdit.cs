@@ -51,7 +51,7 @@ public class NewCharacterMoverEdit : MonoBehaviour
                 CharacterMovement();
                 break;
             case State.HookshotThrown:
-                CharacterMovement();
+                //CharacterMovement();
                 HookShoot();
                 break;
             case State.HookshotFlyingPlayer:
@@ -105,16 +105,18 @@ public class NewCharacterMoverEdit : MonoBehaviour
 
         Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
 
-        body.velocity = pushDir * pushPower;
+        body.velocity = pushDir * pushPower * Time.deltaTime;
     }
 
     private void HookshotStart()
     {
+        int layerMask = 1 << 21;
+
         Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
 
         if (TestInputDownHookshot())
         {
-            if (Physics.Raycast(player.transform.position, player.transform.forward, out grapplePoint))
+            if (Physics.Raycast(player.transform.position, player.transform.forward, out grapplePoint, 800, layerMask))
             {
                 debugHitPointTransform.position = grapplePoint.point;
                 hookshotPosition = grapplePoint.point;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyFireTest : MonoBehaviour
+public class BossFireTest : MonoBehaviour
 {
     public Transform player;
     public float range = 50.0f;
@@ -15,8 +15,8 @@ public class EnemyFireTest : MonoBehaviour
 
     public void Start()
     {
-        float rand = Random.Range(1.0f, 2.0f);
-        InvokeRepeating("Shoot", 2, rand);
+        float rand = Random.Range(0.5f, 2.0f);
+        InvokeRepeating("Shoot", 1.5f, rand);
     }
 
     public void Shoot()

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyShoot : MonoBehaviour
 {
+    public GameObject impactEffect;
     public Transform player;
     public Transform enemy;
     public bool IsAttacking = false;
@@ -52,6 +53,38 @@ public class EnemyShoot : MonoBehaviour
             bullet = GetComponent<Rigidbody>();
             bullet.AddRelativeForce(forces);
             Destroy(gameObject, 2f);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+            Destroy(effectIns, 2f);
+            Destroy(gameObject);
+            return;
+        }
+
+        //if (other.gameObject.tag == "Enemy" && enemyHealth.value <= 0f)
+        //{
+        //    Destroy(other.gameObject);
+        //}
+
+        if (other.gameObject.tag == "Border")
+        {
+            GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+            Destroy(effectIns, 2f);
+            Destroy(gameObject);
+            return;
+        }
+
+        if (other.gameObject.tag == "Obstacle")
+        {
+            GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+            Destroy(effectIns, 2f);
+            Destroy(gameObject);
+            return;
         }
     }
 }

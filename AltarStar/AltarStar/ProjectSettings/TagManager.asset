@@ -13,6 +13,7 @@ TagManager:
   - Weapon
   - Missile
   - grapplePoint
+  - EnemyWeapon
   layers:
   - Default
   - TransparentFX

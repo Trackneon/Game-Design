@@ -4459,7 +4459,6 @@ GameObject:
   - component: {fileID: 977857021}
   - component: {fileID: 977857020}
   - component: {fileID: 977857019}
-  - component: {fileID: 977857024}
   - component: {fileID: 977857023}
   m_Layer: 0
   m_Name: Abyss
@@ -4551,42 +4550,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 977857018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08053a5302582da4cb28ed9a855709ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ad075d7703261740a4dc7d73f0ee2a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &977857024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977857018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 559c2af593f1a7942bc6519666428a27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TriggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 977857023}
-        m_MethodName: GameOver
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  TriggerExitEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &992802474 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4665959582255012434, guid: e5769173620b87d45ad1040662bf2dae,
@@ -4632,6 +4598,20 @@ MonoBehaviour:
   marker: {fileID: 0}
   maxAngle: 90
   range: 800
+--- !u!114 &992802489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992802474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444a1c951c36ca145bb7c067c632ba17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 11400000, guid: 67a212c5ddddf8743a41d2aedde71883, type: 2}
+  newData: {fileID: 11400000, guid: 4b453a015af713f49ad6d69a9a8edbf9, type: 2}
 --- !u!1 &1015708609
 GameObject:
   m_ObjectHideFlags: 0

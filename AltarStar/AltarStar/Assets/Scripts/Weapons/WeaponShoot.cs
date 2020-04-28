@@ -9,12 +9,13 @@ public class WeaponShoot : MonoBehaviour
     public Transform bullet;
     public Transform location;
     public float timeBetweenShots = 0.333f;
+    public AudioSource source;
 
     private float timestamp;
 
     void Start()
     {
-
+        source = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -29,6 +30,9 @@ public class WeaponShoot : MonoBehaviour
     public void Fire()
     {
         var ammo = Instantiate(bullet, location.position, location.rotation);
+
         ammo.GetComponent<AmmoHandler>().weaponObj = weaponObj;
+
+        source.Play();
     }
 }

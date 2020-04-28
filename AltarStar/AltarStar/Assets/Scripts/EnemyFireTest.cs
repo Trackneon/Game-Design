@@ -8,6 +8,7 @@ public class EnemyFireTest : MonoBehaviour
     public float range = 50.0f;
     public float bulletImpulse = 20.0f;
     //public GameObject impactEffect;
+    public AudioSource source;
 
     private bool onRange = false;
 
@@ -17,6 +18,7 @@ public class EnemyFireTest : MonoBehaviour
     {
         float rand = Random.Range(1.0f, 2.0f);
         InvokeRepeating("Shoot", 2, rand);
+        source = GetComponentInParent<AudioSource>();
     }
 
     public void Shoot()
@@ -27,6 +29,8 @@ public class EnemyFireTest : MonoBehaviour
 
             Rigidbody bullet = (Rigidbody)Instantiate(projectile, transform.position + transform.forward, transform.rotation);
             bullet.AddForce(transform.forward * bulletImpulse, ForceMode.Impulse);
+
+            source.Play();
 
             Destroy(bullet.gameObject, 2f);
         }

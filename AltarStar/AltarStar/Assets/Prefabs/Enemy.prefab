@@ -127,6 +127,7 @@ MonoBehaviour:
   player: {fileID: 0}
   range: 200
   bulletImpulse: 500
+  source: {fileID: 4902750220803225252, guid: 9c332f66de88fbb4797eb038bb8cf06c, type: 3}
   projectile: {fileID: 2955599604722152529, guid: 7dca4b41fb5ac604096adddb9cf1f6e2,
     type: 3}
 --- !u!114 &8974296761501143006

@@ -21,6 +21,8 @@ public class NewCharacterMoverEdit : MonoBehaviour
     public GameObject player;
     private LineRenderer line;
 
+    public AudioSource source;
+
     private float hookshotSize;
 
     private State state;
@@ -38,6 +40,7 @@ public class NewCharacterMoverEdit : MonoBehaviour
         debugHitPointTransform.gameObject.SetActive(false);
         state = State.Normal;
         line = GetComponent<LineRenderer>();
+        source = GetComponent<AudioSource>();
         
     }
 
@@ -138,6 +141,7 @@ public class NewCharacterMoverEdit : MonoBehaviour
         //hookshotSize = Vector3.Distance(hookshotPosition, transform.position);
         hookshotSize = Vector3.Distance(debugHitPointTransform.position, transform.position);
 
+        source.Play();
 
         //hookshotSize += hookShootSpeed * Time.deltaTime;
         //hookshotTransform.localScale = new Vector3(1, 1, hookshotSize);

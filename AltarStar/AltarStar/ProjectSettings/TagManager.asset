@@ -42,8 +42,8 @@ TagManager:
   - ForceField
   - Abyss
   - Chamber Trigger
-  - 
-  - 
+  - PushBlockTrigger
+  - PushBlockStopPlayer
   - 
   - 
   - 

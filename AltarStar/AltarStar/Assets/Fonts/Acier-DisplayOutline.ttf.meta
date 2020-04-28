@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: c5f55bfb9fc2ae74a8f8849f687f4060
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Acier
+  fontNames:
+  - Acier
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 207de1206d4e923418485d38829f3fb3, type: 3}
+  - {fileID: 12800000, guid: 83438a4480e12424f98a8437c16d579e, type: 3}
+  - {fileID: 12800000, guid: 14a0b0f92a24599418c49de5cc572230, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

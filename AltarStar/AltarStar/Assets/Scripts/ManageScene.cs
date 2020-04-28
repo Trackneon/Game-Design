@@ -28,4 +28,9 @@ public class ManageScene : MonoBehaviour
     {
         SceneManager.LoadScene("NewBossArenaChamber");
     }
+
+    public void Victory()
+    {
+        SceneManager.LoadScene("Victory");
+    }
 }

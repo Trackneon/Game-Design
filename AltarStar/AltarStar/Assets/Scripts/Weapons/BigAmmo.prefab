@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 761239106515564158}
   - component: {fileID: 6466541083969814971}
   - component: {fileID: -3149112208236233794}
+  - component: {fileID: -7280568101887839462}
   m_Layer: 0
   m_Name: BigAmmo
   m_TagString: Untagged
@@ -111,8 +112,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Forces: {x: 0, y: 0, z: 100000}
   weaponObj: {fileID: 0}
-  enemyPrefab: {fileID: 7952199792157113192, guid: 33381712e99ace6469146acc33b64c0b,
-    type: 3}
   impactEffect: {fileID: 3514486976410653576, guid: 7a638d0a7860b484a82daf20d287a436,
     type: 3}
 --- !u!65 &-3149112208236233794
@@ -128,3 +127,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 1, z: 0.99999994}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-7280568101887839462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4549542772124911843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b24616785afe98748b8f4611271f5dde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Forces: {x: 0, y: 0, z: 0}
+  weaponObj: {fileID: 0}
+  impactEffect: {fileID: 0}

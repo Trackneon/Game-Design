@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a5c0e358dee4a4469b23ed7b90d65fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 8403383056651218193, guid: 830dc254800c4b84eab411514614e530, type: 3}
   destination: {fileID: 0}
 --- !u!82 &-8633037044599978803
 AudioSource:

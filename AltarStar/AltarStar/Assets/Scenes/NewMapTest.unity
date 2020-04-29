@@ -3284,6 +3284,7 @@ RectTransform:
   - {fileID: 351965067}
   - {fileID: 1507096845}
   - {fileID: 1588208322}
+  - {fileID: 1254656891}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4679,6 +4680,7 @@ GameObject:
   - component: {fileID: 317375774}
   - component: {fileID: 317375777}
   - component: {fileID: 317375773}
+  - component: {fileID: 317375778}
   m_Layer: 15
   m_Name: TriggerKey3
   m_TagString: Key2Trigger
@@ -4870,6 +4872,39 @@ MonoBehaviour:
   door: {fileID: 392626293}
   key: {fileID: 1035163548}
   source: {fileID: 317375773}
+--- !u!114 &317375778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317375771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559c2af593f1a7942bc6519666428a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 317375774}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  TriggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &318404908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6467,6 +6502,168 @@ Transform:
   m_Father: {fileID: 1431878471}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -8.320001, z: 0}
+--- !u!1 &404175787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 404175788}
+  - component: {fileID: 404175793}
+  - component: {fileID: 404175792}
+  - component: {fileID: 404175791}
+  - component: {fileID: 404175790}
+  - component: {fileID: 404175789}
+  m_Layer: 22
+  m_Name: Begin(Controllers)
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404175788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404175787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1275.1, y: 143.28806, z: 710.1}
+  m_LocalScale: {x: 54.497837, y: 57.177036, z: 5.2346263}
+  m_Children: []
+  m_Father: {fileID: 834881791}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &404175789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404175787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559c2af593f1a7942bc6519666428a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 404175790}
+        m_MethodName: TutDisplay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  TriggerExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 404175790}
+        m_MethodName: TutHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 404175791}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &404175790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404175787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55b020f8d02e5944af9d5fe011f3251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutDisplay: {fileID: 1254656890}
+--- !u!65 &404175791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404175787}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.296116, y: 1, z: 22.058353}
+  m_Center: {x: 0.021983538, y: 0, z: 4.5227933}
+--- !u!23 &404175792
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404175787}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &404175793
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404175787}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &404936160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6719,8 +6916,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.99999976, y: 1, z: 9.128409}
-  m_Center: {x: 0, y: 0, z: 4.064205}
+  m_Size: {x: 0.99999976, y: 1, z: 13.699162}
+  m_Center: {x: 0, y: 0, z: 6.3495812}
 --- !u!23 &408416493
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6775,7 +6972,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408416489}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -420.8681, y: 143.28806, z: 477.30966}
+  m_LocalPosition: {x: -625.4, y: 143.28806, z: 455.1}
   m_LocalScale: {x: 54.497837, y: 57.177036, z: 5.2346263}
   m_Children: []
   m_Father: {fileID: 834881791}
@@ -7447,7 +7644,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450544008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 346, y: 11.5, z: 483}
+  m_LocalPosition: {x: 375.4, y: 11.5, z: 491.7}
   m_LocalScale: {x: 10.019895, y: 10.019895, z: 10.019895}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12483,6 +12680,7 @@ Transform:
   - {fileID: 93553143}
   - {fileID: 1538651127}
   - {fileID: 1724159836}
+  - {fileID: 404175788}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13090,6 +13288,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 983139280397179089, guid: 59aac5c6c180e8f48a5a472c44e7141c,
     type: 3}
   m_PrefabInstance: {fileID: 1074826528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &900987412 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 3596252255531670635, guid: 83b92024b3a05674b9cf2f0705a33b65,
+    type: 3}
+  m_PrefabInstance: {fileID: 1834977000}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &901165478
 GameObject:
@@ -15532,8 +15736,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: When enemies are near, press Left Trigger or Numpad Enter to lock on to
-    the closest enemy!
+  m_Text: When enemies are near, press and hold Numpad Enter (gamepad Left Trigger)
+    to lock on to the closest enemy!
 --- !u!222 &1063607641
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17375,6 +17579,87 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 3195624215787840532, guid: 59aac5c6c180e8f48a5a472c44e7141c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 59aac5c6c180e8f48a5a472c44e7141c, type: 3}
+--- !u!1 &1254656890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1254656891}
+  - component: {fileID: 1254656893}
+  - component: {fileID: 1254656892}
+  m_Layer: 5
+  m_Name: Begin(Controllers)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1254656891
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254656890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 215406650}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 11, y: -123}
+  m_SizeDelta: {x: 443.8, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1254656892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254656890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 66
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "You may use a keyboard with a numpad, or a game controller mapped to your
+    computer to play. Move with the WASD keys on your keyboard or with the gamepad\u2019s
+    left joystick."
+--- !u!222 &1254656893
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254656890}
+  m_CullTransparentMesh: 0
 --- !u!1 &1255521047
 GameObject:
   m_ObjectHideFlags: 0
@@ -20865,8 +21150,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Press and while holding Right Trigger or Numpad 3, press Y or Numpad 1
-    to fire your hookshot and pull yourself to nearby pillars/grapple points.
+  m_Text: "Press and hold Numpad 3 (gamepad Right Trigger) to lock on to grapple
+    pillars in player\u2019s FOV, then press Numpad 1 (gamepad Y) to fire your grapple
+    and pull yourself to the pillars. Press grapple fire or player jump keys/buttons
+    to detach from grapple objects."
 --- !u!222 &1507096847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22175,8 +22462,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Use your hookshot to hit the orb into the trigger at the bottom of the
-    room to access the key in the next room!
+  m_Text: Push the orb into the trigger at the bottom of the room to access the key
+    in the next room! (Try playing with gravity by using your grapple!)
 --- !u!222 &1588208324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23685,12 +23972,12 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Collect the four keys to gain access to the portal! \nPress A or Numpad
-    0 to fire your blaster.\nPress X or Numpad 2 to fire missiles.\nPress B or Space
-    to dodge enemy fire."
+  m_Text: "Collect the four keys to gain access to the portal! \r\nPress Numpad 0
+    (gamepad A) to fire your blaster.\r\nPress Numpad 2 (gamepad X) to fire missiles.\r\nPress
+    Space (gamepad B) to dodge enemy fire.\r\n"
 --- !u!222 &1666801794
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26034,6 +26321,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HealthPowerup (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: -3630503027414101878, guid: 83b92024b3a05674b9cf2f0705a33b65,
+        type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -3630503027414101878, guid: 83b92024b3a05674b9cf2f0705a33b65,
+        type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -3630503027414101878, guid: 83b92024b3a05674b9cf2f0705a33b65,
+        type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -3630503027414101878, guid: 83b92024b3a05674b9cf2f0705a33b65,
+        type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 900987412}
+    - target: {fileID: -3630503027414101878, guid: 83b92024b3a05674b9cf2f0705a33b65,
+        type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: -3630503027414101878, guid: 83b92024b3a05674b9cf2f0705a33b65,
+        type: 3}
+      propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83b92024b3a05674b9cf2f0705a33b65, type: 3}

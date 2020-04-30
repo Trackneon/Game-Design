@@ -22710,16 +22710,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1931009952}
     m_Modifications:
-    - target: {fileID: -8633037044599978803, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
-        type: 3}
-      propertyPath: m_Pitch
-      value: 0.36
-      objectReference: {fileID: 0}
-    - target: {fileID: -8633037044599978803, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.65
-      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: player
       value: 
@@ -22874,6 +22864,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Speed
       value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: -8633037044599978803, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: -8633037044599978803, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 9068782732258801281, guid: 8eb99e55d49c8b04a8bceb580cb60f92,
         type: 3}
